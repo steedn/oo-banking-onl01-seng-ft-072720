@@ -7,6 +7,5 @@ class Transfer
     @status = "pending"
   end
   def valid?
-    BankAccount.valid?
   end
 end
