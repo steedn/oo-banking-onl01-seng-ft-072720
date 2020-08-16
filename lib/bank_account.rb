@@ -13,6 +13,6 @@ class BankAccount
     "Your balance is $#{@balance}."
   end
   def valid?
-    self.status == "open" || self.balance > 0
+    self.status == "open" && self.balance > 0
   end
 end
