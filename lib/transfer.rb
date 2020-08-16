@@ -12,6 +12,9 @@ class Transfer
     @sender.valid? && @receiver.valid?
   end
   def execute_transaction
+    if @sender.balance < @amount
+      @status = "rejected"
+    elsif
       @sender.balance -= @amount
       @receiver.balance += @amount
       @status = "complete"
