@@ -7,5 +7,6 @@ class Transfer
     @status = "pending"
   end
   def valid?
+    Song.valid?
   end
 end
