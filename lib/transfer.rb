@@ -19,6 +19,6 @@ class Transfer
       @status = "complete"
       # binding.pry
       counter +=1
-    fend
+    end
   end
 end
